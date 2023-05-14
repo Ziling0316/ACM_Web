@@ -1,9 +1,14 @@
+body{
+  height:100vh;
+  background: #4A4949;
+  
+}
 .banner{
     min-height: 100vh;
     display:flex;
     flex-direction: column;
     justify-content: flex-start;
-    background: #4A4949;
+    
 }
 #ACM_img{
     position: absolute;
