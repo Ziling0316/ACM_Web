@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>活動規劃</title>
+  <link rel="stylesheet" href="../CSS/event.css" type="text/css" />
+</head>
+
+<body>
+  <div class="banner">
+    <a href="index.html">
+      <div>
+        <p id="title">NCNU ACM</p>
+        <img id="ACM_img" src="../LINE_ALBUM_230513.jpg" alt="Italian Trulli">
+      </div>
+    </a>
+  </div>
+  <div class="navbar">
+    <button id="one" class="tablinks" onclick="openCity(event, 'London')">110學年度</button>
+    <button id="two" class="tablinks" onclick="openCity(event, 'Paris')">111學年度</button>
+    <button id="three" class="tablinks" onclick="openCity(event, 'Tokyo')">112學年度</button>
+    <a href="https://drive.google.com/drive/folders/17yiLSSyOhR-93Y6xRMl2v6OL0tcvRq6h?usp=share_link"><button
+        id="photo">活動照片</button></a>
+  </div>
+
+  <div id="London" class="tabcontent">
+    <ul id="London_ul">
+      <li>
+        <p>2021-05-02『 Labs分享 』</p>
+      </li>
+      <li>
+        <p>2021-05-16『 技術分享 - 網頁必備UI設計工具 』</p>
+      </li>
+      <li>
+        <p>2021-05-22『 報名HPC-AI競賽 』</p>
+      </li>
+      <li>
+        <p>2021-06-06『 技術分享 - 方湘婷學姊』</p>
+      </li>
+      <li>
+        <p>2021-06-27『 技術分享 - 嘉哲學長 』</p>
+      </li>
+      <li>
+        <p>2021-07-04『 技術分享 - 蕭惟杰學長 』</p>
+      </li>
+      <li>
+        <p>2021-07-23『 作業系統讀書會 』</p>
+      </li>
+      <li>
+        <p>2021-10-03『 大一介紹活動 』</p>
+      </li>
+      <li>
+        <p>(不明開始時間)『 108教室設計 』</p>
+      </li>
+      <li>
+        <p>(不明開始時間)『 科三電子鐘設計 』</p>
+      </li>
+
+      <li>
+        <p>2021-11-06『 C.G寫遊戲 』</p>
+      </li>
+      <li>
+        <p>2021-11-28『 電腦清潔日 』</p>
+      </li>
+      <li>
+        <p>2021-12-05『 安裝Linux虛擬機 』</p>
+      </li>
+
+    </ul>
+  </div>
+
+  <div id="Paris" class="tabcontent">
+    <ul id="London_ul">
+      <li>
+        <p>2022-03-25『 期初大會 』</p>
+      </li>
+      <li>
+        <p>2022-03-27 『 MFC教學 』</p>
+      </li>
+      <li>
+        <p>2022-9-29 『 Linux指令教學 』</p>
+      </li>
+      <li>
+        <p>2022- 『 python爬蟲 』</p>
+      </li>
+      <li>
+        <p>2022-10-17 『 OpenCV教學 』</p>
+      </li>
+      <li>
+        <p>2022-11-14 『 Nginx教學 』</p>
+      </li>
+      <li>
+        <p>2022-12-05 『 SQLite教學 』</p>
+      </li>
+      <li>
+        <p>2023-03-15 『 Labs sharing 』</p>
+      </li>
+      <li>
+        <p>2023-03-15 『 會員大會 』</p>
+      </li>
+    </ul>
+  </div>
+
+  <div id="Tokyo" class="tabcontent">
+    <ul id="London_ul">
+      <li>
+        <p>2023-03-23『 宣傳資安女捷思比賽 』</p>
+      </li>
+      <li>
+        <p>2023-04-16『 直播資安女捷思比賽過程 』</p>
+      </li>
+      <li>
+        <p>2023-04-22『 基本網路指令教學 』</p>
+      </li>
+      <li>
+        <p>2023-04-23『 Git指令教學 』</p>
+      </li>
+      <li>
+        <p>2023-04-27『 參與International Girls in Girls ICT Day講座 』</p>
+      </li>
+      <li>
+        <p>2023-05-19『 會員大會 』</p>
+      </li>
+      <li>
+        <p>2023-05-21『 Flask教學 』</p>
+      </li>
+      <li>
+        <p>2023-05-28『 C.G遊戲設計 』</p>
+      </li>
+
+    </ul>
+  </div>
+
+  <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
+</body>
+
+</html>
